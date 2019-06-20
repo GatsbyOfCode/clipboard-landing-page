@@ -9,8 +9,52 @@ html
 body
     font-family: 'Bai Jamjuree'
 
+.container
+    display: flex
+    flex-direction: column
+    padding: 1%
+
+header
+    text-align: center
+
+header h1
+    width: 100%
+
+header p
+    width: 100%
+
+.computer
+    height: auto
+
+.midmid1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+
+.devices
+    height: auto
+    width: 100%
+
+.midmid2 h4
+    width: 100%
+
+.bottom p
+    width: 100%
+
+.brands
+    width: 100%
+
+ul
+    text-decoration: none
+    list-style: none
+
 h1,
-h3
+h2,
+h3,
+h4,
+h5
     color: hsl(210, 10%, 33%)
 
 p,
@@ -20,31 +64,37 @@ a
 a
     text-decoration: none
 
-a:hover,
+ul a:hover,    
 .fab:hover
     color: hsl(171, 66%, 44%)
 
-.iOS
+.buttons
+    width: 100%
+
+.btn-iOS,
+.btn-mac
+    border: none
+    border-radius: 25px
+    font-weight: 500
+    color: #ffffff
+
+.btn-iOS
     background-color: hsl(171, 66%, 44%)
 
-.iOS:hover
+.btn-iOS:hover
     background-color: hsl(171, 70%, 50%)
 
-.mac
+.btn-mac
     background-color: hsl(233, 100%, 69%)
 
-.mac:hover
+.btn-mac:hover
     background-color: HSL(223, 75%, 70%)
 
-
 @media only screen and (max-width: 800px){
-.container
-    display: flex
-    flex-direction: column
-    padding: 1%
-    
+body
+    background: url('C:/Users/jnewm/Desktop/clipboard-landing-page-master/images/bg-header-mobile.png') no-repeat top
+
 header
-    text-align: center
     display: flex
     flex-direction: column
     justify-content: center
@@ -52,24 +102,26 @@ header
     
 header h1
     font-size: 1.6rem
-    width: 100%
     margin-bottom: 0
 
 header p
     font-size: 0.9rem
-    width: 100%
     padding: 3%
 
-button
+.buttons
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.btn-iOS,
+.btn-mac
     width: 80%
     height: 2.5rem
-    border-radius: 25px
-    border: none
     text-align: center
-    font-weight: 500
     font-size: 1rem
-    color: #ffffff
     margin-bottom: 7%
+    padding-top: 3%
 
 .logo
     padding-top: 4%
@@ -87,7 +139,6 @@ button
     
 .computer
     width: 100%
-    height: auto
     padding: 5%
 
 .topmid
@@ -105,25 +156,16 @@ button
     padding:  0 3% 1% 3%
     
 .midmid1
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    text-align: center
     padding-top: 5%
 
-.midmid1 h1
+.midmid1 h4
     font-size: 1.6rem
-    width: 100%
 
 .midmid1 p
     font-size: 0.9rem
-    width: 100%
     padding:  0 3% 1% 3%
     
 .devices
-    width: 100%
-    height: auto
     padding: 5%
     
 .midmid2
@@ -133,15 +175,13 @@ button
     align-items: center
     text-align: center
     
-.midmid2 h1
-    width: 100%
+.midmid2 h4
     font-size: 1.6rem
     margin: 0
 
     
 .midmid2 p
     font-size: 0.9rem
-    width: 100%
     padding:  0 3% 1% 3%
     
 .blacklist,
@@ -156,7 +196,6 @@ button
     flex-direction: column
     justify-content: center
     align-items: center
-    width: 100%
 
 .brands img
     width: 100%
@@ -170,14 +209,14 @@ button
     align-items: center
     text-align: center
     
-.bottom h1
+.bottom h5
     width: 100%
     font-size: 1.6rem
     padding: 3%
+    margin-bottom: 0
 
 .bottom p
     font-size: 0.9rem
-    width: 100%
     padding: 0 3% 5% 3%
     
 footer
@@ -191,8 +230,6 @@ footer
     padding: 5% 37%
 
 ul
-    list-style: none
-    text-decoration: none
     width: 100%
     margin: 5% 0 0 0
     padding: 0
@@ -217,13 +254,10 @@ li
     padding: 0 40% 0 15%}
 
 @media only screen and (min-width: 801px){
-.container
-    display: flex
-    flex-direction: column
-    padding: 1%
+body
+    background: url('C:/Users/jnewm/Desktop/clipboard-landing-page-master/images/bg-header-desktop.png') no-repeat top
     
 header
-    text-align: center
     padding-top: 10%
     
 .logo
@@ -232,32 +266,35 @@ header
     
 header h1
     margin-top: 5%
-    width: 100%
     
 header p
-    width: 100%
     padding: 0 27%
     line-height: 1.8rem
     
-button
-    border: none
-    border-radius: 25px
+.buttons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+.btn-iOS,
+.btn-mac
+    position: relative
     height: 3rem
     width: 20%
-    font-size: 1rem
-    font-weight: 500
-    color: #ffffff
+    font-size: 1.1rem
+    padding-top: 1%
+    margin: 0 1% 7% 0
     
 .top
     text-align: center
     padding-top: 10%
     
-.top h1
+.top h2
     font-size: 1.8rem
     width: 100%
     
 .top p
-    width: 100%
     padding: 0 27% 5% 27%
     line-height: 1.8rem
 
@@ -266,7 +303,7 @@ button
     flex-direction: row
     justify-content: space-between
 
-aside 
+aside
     display: flex
     flex-direction: column
     width: 40%
@@ -280,23 +317,17 @@ aside p
     padding-right: 20%
 
 .computer
-    height: auto
     width: 115%
     
 .midmid1
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    text-align: center
     padding-top: 6%
 
 .midmid1 p,
-.midmid1 h1
+.midmid1 h4
     width: 100%
     padding: 0
 
-.midmid1 h1
+.midmid1 h4
     font-size: 1.8rem
     margin-bottom: 0
 
@@ -304,8 +335,6 @@ aside p
     margin-bottom: 2%
 
 .devices
-    height: auto
-    width: 100%
     padding: 0 10%
     
 .midmid2
@@ -313,10 +342,11 @@ aside p
     flex-direction: column
     text-align: center
 
-.midmid2 h1,
 .midmid2 p
-    width: 100%
     margin: 0 0 1% 0
+
+.midmid2 h4
+    font-size: 1.3rem
 
 .row
     width: 100%
@@ -339,7 +369,6 @@ aside p
     flex-direction: row
     justify-content: center
     align-items: center
-    width: 100%
     padding-top: 9%
     
 .brands img
@@ -352,8 +381,10 @@ aside p
     align-items: center
     padding-top: 8%
     
+.bottom h5
+    font-size: 1.3rem
+
 .bottom p
-    width: 100%
     padding: 0 20% 1% 20%
     
 footer
@@ -364,8 +395,6 @@ footer
     padding: 5% 0
     
 ul
-    text-decoration: none
-    list-style: none
     display: flex
     flex-direction: row
     width: 40%
