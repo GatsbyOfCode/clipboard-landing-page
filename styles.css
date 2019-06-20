@@ -130,7 +130,7 @@ ul a:hover,
 
 @media only screen and (max-width: 800px) {
   body {
-    background: url("/clipboard-landing-page/images/bg-header-mobile.png") no-repeat top;
+    background: url(/clipboard-landing-page/images/bg-header-mobile.png) no-repeat top;
   }
   header {
     display: -webkit-box;
@@ -361,7 +361,7 @@ ul a:hover,
 
 @media only screen and (min-width: 801px) {
   body {
-    background: url("/clipboard-landing-page/images/bg-header-desktop.png") no-repeat top;
+    background: url(/clipboard-landing-page/images/bg-header-desktop.png) no-repeat top;
   }
   header {
     padding-top: 10%;
